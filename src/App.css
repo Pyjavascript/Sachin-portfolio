@@ -1,0 +1,7 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+ion-icon{
+    color:#fff;
+    font-size:1.5rem;
+}
