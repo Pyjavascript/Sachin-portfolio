@@ -5,23 +5,9 @@ function Home() {
     <div className="lg:px-48 px-4 md:px-10">
       <div className="flex flex-col gap-4 py-7 pb-12">
         <div>
-          <img
-            src="https://lh4.googleusercontent.com/rOn3AfOD6CU8gzysW-QcXVm7DBYTa430Bd7cKT6jofk4AXQBTaFbY31rS12VwNrsz__AREh4FDRHCGAHeznrwXzY5kU4cAu64wWwNPjpA-ib2KEZc-5xwlI6D8knwQEUIg=w1280"
-            alt="Profile"
-          />
-          <img
-            src="https://lh6.googleusercontent.com/xIQYBQKDzp4wcbTWj-R-eQl1PTQKRPCbFikwuvRw-zu1H0hNGWrdfp84ImV4n4kgRifNyJ1SNNhOIji6zvQ5jVg=w1280"
-            alt="work"
-          />
+         {/* banner changes */}
         </div>
-        <p className="text-center font-semibold text-base">
-          <span className="text-2xl text-[#9900ff]">H</span>euristic{" "}
-          <span className="text-2xl text-[#9900ff]">I</span>ntelligence{" "}
-          <span className="text-2xl text-[#9900ff]">R</span>esearch{" "}
-          <span className="text-2xl text-[#9900ff]">a</span>nd{" "}
-          <span className="text-2xl text-[#9900ff]">K</span>nowledge{" "}
-          <span className="text-2xl text-[#9900ff]">L</span>aboratory
-        </p>
+       {/* <!--p changes--> */}
       </div>
       <div>
         <div className="mb-5 flex flex-col gap-12  border-t-2 border-b-2 pt-10 pb-5">
