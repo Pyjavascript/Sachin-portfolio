@@ -7,7 +7,7 @@ function Nav() {
         <div className=' h-4/5 flex gap-3 items-center'>
             <p className='text-white text-xl block font-bold'>Dr. Sachin Mishra</p>
         </div>
-        <div className='flex items-center text-base gap-4'>
+        <div className='flex items-center text-lg font-semibold gap-4'>
             <div className=' sm:flex hidden gap-5'>
             <a href="#" className='text-white'>Home</a>
             <a href="#" className='text-white'>Research</a>

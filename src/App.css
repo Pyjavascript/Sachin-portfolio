@@ -9,3 +9,7 @@ ion-icon{
     color:#fff;
     font-size:1.5rem;
 }
+.link_icons ion-icon{
+    font-size: 2rem;
+    color: rgba(255,255,255,.2);
+}

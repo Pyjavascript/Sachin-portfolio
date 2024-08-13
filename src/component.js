@@ -1,3 +1,4 @@
 import Nav from "./components/nav"
 import Home from "./components/home"
-export {Nav,Home}
+import Icons from "./components/icons"
+export {Nav,Home,Icons}

@@ -1,15 +1,16 @@
 import React from "react";
-
+import Carousel from './carousel'
 function Home() {
   return (
-    <div className="lg:px-48 px-4 md:px-10">
-      <div className="flex flex-col gap-4 py-7 pb-12">
+    <div className="">
+      <div className="flex flex-col gap-4 pb-12">
         <div>
+        <Carousel/>
          {/* banner changes */}
         </div>
        {/* <!--p changes--> */}
       </div>
-      <div>
+      {/* <div>
         <div className="mb-5 flex flex-col gap-12  border-t-2 border-b-2 pt-10 pb-5">
           <h1 className=" text-[#9900ff] font-bold text-2xl">Biosketch:</h1>
           <p className="text-justify">
@@ -61,7 +62,7 @@ function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
