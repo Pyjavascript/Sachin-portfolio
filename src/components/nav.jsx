@@ -3,7 +3,7 @@ import React from 'react'
 function Nav() {
   return (
     <>
-    <nav className='bg-[#201E43] w-screen h-14 p-9 md:px-11 lg:px-8 px-3 flex justify-between items-center'>
+    <nav className='bg-[#a2d2ff] w-screen h-14 p-9 md:px-11 lg:px-8 px-3 flex justify-between items-center'>
         <div className=' h-4/5 flex gap-3 items-center'>
             <p className='text-white text-xl block font-bold'>Dr. Sachin Mishra</p>
         </div>
