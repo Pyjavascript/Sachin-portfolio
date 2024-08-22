@@ -9,7 +9,7 @@ function Nav() {
   };
 
   return (
-    <nav className="bg-[#a2d2ff] w-screen p-9 md:py-2 py-6 md:px-11 lg:px-8 px-3 flex flex-col sm:flex-row justify-between items-center">
+    <nav className="bg-slate-700 w-screen p-9 md:py-2 py-6 md:px-11 lg:px-8 px-3 flex flex-col sm:flex-row justify-between items-center">
       <div className="w-full flex justify-between items-center">
         <div className="flex gap-3 items-center">
           <p className="text-white text-xl block font-bold">Dr. Sachin Mishra</p>
