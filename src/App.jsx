@@ -1,18 +1,20 @@
-import './App.css'
-import {Nav,Home,Icons,Publication,Footer,Working} from "./component"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Layout from './components/layout';
 
 function App() {
-
   return (
-    <>
-      <Nav/>
-      <Home />
-      <Icons />
-      <Publication />
-      <Working />
-      <Footer />
-    </>
-  )
+    <Router basename="/Sachin-portfolio">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
