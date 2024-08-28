@@ -2,9 +2,9 @@ import React from "react";
 import Image from "./image";
 function Home() {
   return (
-  <div className=" pt-5 h-[85vh] text-center flex items-center justify-center">
+  <div className=" h-screen lg:pt-5 lg:h-[85vh] lg:text-center lg:flex lg:items-center lg:justify-center">
     <Image/>
-    <p className="relative -top-44 -right-14">I'm driving innovation in<br/>biosensors, and I love what i do.</p>
+    <p className="lg:relative lg:-top-44 lg:-right-14">I'm driving innovation in<br/>biosensors, and I love what i do.</p>
   </div>
   )
 }

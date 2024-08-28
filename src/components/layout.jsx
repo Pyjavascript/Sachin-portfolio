@@ -1,14 +1,20 @@
-import React from "react";
+import {useState} from "react";
 import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
+  const [isopen,Setisopen] = useState(false);
+  const handleClick = () => {
+    Setisopen(prevIsOpen => !prevIsOpen);
+    
+  };
+
   return (
-    <div className="main p-8 px-36 bg-[#F8F7F1] flex flex-col">
-      <div className="flex justify-between items-center">
-        <div>
+    <div className="overflow-hidden w-screen main lg:p-8 lg:px-36 bg-[#F8F7F1] lg:flex lg:flex-col">
+      <div className="flex justify-between items-center p-3">
+        <div className="w-32 min-w-32 lg:w-40">
           <svg
-            width="166"
-            height="50"
+            width="100%"
+            height="100%"
             viewBox="0 0 166 50"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,23 +29,35 @@ const Layout = () => {
             />
           </svg>
         </div>
-        <nav className="list-none flex gap-32 text-xl">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/">Service</Link>
-          </li>
-          <li>
-            <Link to="/">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </nav>
-        <button className="bg-[#286F6C] p-3 px-7 text-[#F8F7F1] rounded-md">
-          Download CV
-        </button>
+        <div className="relative flex items-center gap-20">
+          <nav className={`absolute top-10 -right-3 p-2 pl-6 w-screen text-center list-none gap-32 text-xl bg-[#F8F7F1] transition-all duration-300 ease-in-out ${
+          isopen ? 'h-auto' : 'h-0 overflow-hidden'
+        } lg:relative lg:w-auto lg:top-auto lg:right-auto lg:flex lg:h-auto lg:overflow-visible z-50`}>
+            <li className="my-3 lg:my-0">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="my-3 lg:my-0">
+              <Link to="/">Service</Link>
+            </li>
+            <li className="my-3 lg:my-0">
+              <Link to="/">Projects</Link>
+            </li>
+            <li className="my-3 lg:my-0">
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li className="my-3 lg:my-0 lg:hidden">
+            <button className="bg-[#286F6C] text-sm p-3 px-7 text-[#F8F7F1] rounded-md ">
+            Download CV
+          </button>
+            </li>
+          </nav>
+          <button className="bg-[#286F6C] p-3 px-7 text-[#F8F7F1] rounded-md hidden lg:block">
+            Download CV
+          </button>
+          <div className="lg:hidden text-5xl" onClick={handleClick}>
+          <ion-icon name="menu-outline"></ion-icon>
+          </div>
+        </div>
       </div>
       <Outlet />
     </div>
